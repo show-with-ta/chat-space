@@ -66,7 +66,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false, unique: true|
+|body|text||
 |image|string||
 |group_id|integer|foreign_key: true, null: false|
 |user_id|integer|foreign_key: true, null: false|

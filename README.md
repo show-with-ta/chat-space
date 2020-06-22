@@ -42,7 +42,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false, unique: true|
-|name|string|null:false|
+|name|string|null: false|
 
 ### Association
 - has_many :messages
@@ -54,8 +54,8 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false, unique: true|
-|user_id|integer|null:false|
-|group_id|integer|null:false|
+|user_id|integer|null:false, :users, foreign_key: true|
+|group_id|integer|null:false, :groups, foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -67,9 +67,9 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false, unique: true|
-|image|string|null:false|
-|group_id|integer|foreign_key: true|
-|user_id|integer|foreign_key: true|
+|image|string||
+|group_id|integer|foreign_key: true, null: false|
+|user_id|integer|foreign_key: true, null: false|
 
 ### Association
 - belongs_to :group

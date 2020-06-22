@@ -30,7 +30,7 @@ Things you may want to cover:
 |id|integer|null: false, unique: true|
 |name|string|null:false|
 |password|string|null:false|
-|email|string|null:false|
+|email|string|null:false, unique: true|
 
 ### Association
 - has_many :messages

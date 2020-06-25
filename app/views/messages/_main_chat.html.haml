@@ -1,0 +1,28 @@
+.Main
+  .Main__Header
+    .Main__Header__group
+      .Main__Header__group__name techcamp
+      .Main__Header__group__member Member：masa
+    = link_to "#", class: ".Main__Header__edit" do
+      Edit
+  .Main__Chat
+    .Main__Chat__box
+      .Main__Chat__box__data
+        .Main__Chat__box__data__name masa
+        .Main__Chat__box__data__date 2019/11/20(Wed) 17:43:01
+      .Main__Chat__box__message
+        .Main__Chat__box__message__content おはよう
+    .Main__Chat__box
+      .Main__Chat__box__data
+        .Main__Chat__box__data__name masa
+        .Main__Chat__box__data__date 2019/11/20(Wed) 17:43:34
+      .Main__Chat__box__message
+        .Main__Chat__box__message__content 今日は夜から雨
+  .Main__Footer
+    %form.Main__Footer__form
+      .Main__Footer__form__content
+        %input.Main__Footer__form__content__input{:placeholder => "type a message", :type => "text"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image', class: "input-box__image__icon")
+          %input{type: "file", class: "input-box__image__input"}
+      %input.Main__Footer__form__input{:type => "submit", :value => "Send"}

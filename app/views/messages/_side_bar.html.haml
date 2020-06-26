@@ -1,11 +1,12 @@
 .Side
   .Side__header
     .Side__header__box
-      .Side__header__box__name masa
+      .Side__header__box__name
+        = current_user.name
       .Side__header__box__icon
-        =link_to "" do
+        =link_to "#" do
           = icon('far', 'edit', class: "Side__icon--edit")
-        =link_to "" do
+        =link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: "Side__icon--cog")
   .Side__groups
     .group-list

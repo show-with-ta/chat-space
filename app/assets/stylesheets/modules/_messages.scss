@@ -41,20 +41,22 @@
       height: calc(100vh - 100px);
       background-color: #2f3e51;
       padding: 0 20px;
-      color: #ffffff;
-      .group-box{
-        padding: 20px 0 40px;
-        .group-name{
-          font-size: 15px;
-        }
-        .group-message{
-          font-size: 11px;
-          margin-top: 5px;
+      .group-list{
+        .group-box{
+          padding: 20px 0 40px;
+          .group-name{
+            font-size: 15px;
+            color: #ffffff;
+          }
+          .group-message{
+            font-size: 11px;
+            margin-top: 5px;
+            color: #ffffff;
+          }
         }
       }
     }
   }
-
   .Main {
     background-color: #ffffff;
     width: calc(100vw - 300px);

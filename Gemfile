@@ -52,8 +52,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+<<<<<<< HEAD
 
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 
 gem 'font-awesome-sass'
 gem 'devise'
+=======
+>>>>>>> parent of d119d07... Merge pull request #2 from show-with-ta/chat-space-front
